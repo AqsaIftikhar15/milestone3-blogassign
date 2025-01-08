@@ -1,16 +1,21 @@
+@tailwind base; 
+@tailwind components;
+@tailwind utilities;
+
+
 .parentdiv {
-background-image: url('../../images/pic2.webp');
-background-size: cover;
-background-position: center; 
-background-repeat: no-repeat;
-text-align: center;
-color: #fff;
-display: flex;
-flex-wrap: wrap;
-padding: 50px;
-flex-direction: column; 
-align-items: center;
-padding: 20px;
+  background-image: url('../../images/pic2.webp');
+  background-size: cover;
+  background-position: center; 
+  background-repeat: no-repeat;
+  text-align: center;
+  color: #fff;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 50px;
+  flex-direction: column; 
+  align-items: center;
+  padding: 20px;
 }
 
 .fade-in {
@@ -24,13 +29,13 @@ padding: 20px;
  * w: http://animista.net, t: @cssanimista
  * ---------------------------------------------- */
 
- @-webkit-keyframes fade-in{0%{opacity:0}100%{opacity:1}}@keyframes fade-in{0%{opacity:0}100%{opacity:1}}
+@-webkit-keyframes fade-in{0%{opacity:0}100%{opacity:1}}@keyframes fade-in{0%{opacity:0}100%{opacity:1}}
 
-  .child {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center; 
-    width: 100%;
+.child {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; 
+  width: 100%;
 }
 
 .blog-heading {
@@ -48,6 +53,10 @@ padding: 20px;
   box-sizing: border-box; 
   margin: 10px;
   transition: transform 0.3s ease;
+}
+
+.content h1{
+  font-size:"90px"
 }
 
 .blog-box:hover {
@@ -93,11 +102,10 @@ padding: 20px;
   background-color: #5F615C; 
 }
 
-
 .blog-button {
   margin-top: 2px;
   margin-bottom: 150px; 
-  padding: 10px 20px; 
+  padding: 10px 5px; 
   font-size: 16px;
   color: #fff;
   background-color: #808389;
@@ -150,7 +158,6 @@ padding: 20px;
 }
 
 
-
 @media (max-width: 480px) {
   .blog-box {
     width: 100%; 
@@ -169,3 +176,117 @@ padding: 20px;
   }
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Comment Page Container */
+.comment-page-container {
+  background-image: url('../../images/pic2.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh; /* Full height */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+/* H1 Styling */
+.comment-page-container h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+  color: white;
+}
+
+/* Comment Section Styling */
+.comment-section {
+  background-color: rgba(0, 0, 0, 0.7); /* Dark transparent background */
+  border-radius: 10px;
+  padding: 20px;
+  width: 100%;
+  max-width: 600px;
+}
+
+/* Textarea Styling */
+.textarea {
+  background-color: #ffffff;
+  border: 1px solid #aaa;
+  padding: 10px;
+  border-radius: 8px;
+  width: 100%;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+textarea:focus {
+  outline: none;
+  border-color: #9ca3af;
+}
+
+/* Button Styling */
+button {
+  background-color: #4f7cac;
+  color: white;
+  padding: 10px;
+  width: 100%;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.2s ease;
+}
+
+button:hover {
+  background-color: #36698c;
+}
+
+/* Comment Item Styling */
+.comment-item {
+  background-color: #333;
+  border: 1px solid #444;
+  border-radius: 10px;
+  padding: 10px;
+  margin-bottom: 10px;
+  color: white;
+  font-size: 14px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* No Comments Styling */
+.no-comments {
+  background-color: #444;
+  color: #aaa;
+  padding: 10px;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+/* Ensure proper layout on smaller screens */
+@media (max-width: 480px) {
+  .comment-section {
+      padding: 15px;
+  }
+
+  .textarea {
+      font-size: 12px;
+  }
+
+  button {
+      font-size: 12px;
+  }
+}

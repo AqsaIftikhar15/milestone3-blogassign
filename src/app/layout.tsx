@@ -12,11 +12,11 @@ children: React.ReactNode;}>) {return (
         <nav>
           <Link href="/">Home</Link>
           <Link href="/blogs">Our Blogs</Link>
-          <Link href="/contact">Contact Us</Link>
+          <Link href="/contact">Your Views</Link>
         </nav>
           </header>
         {children}
-      <footer className="footer"><nav>Created by Aqsa Iftikhar</nav></footer>
+      <footer className="footer"><nav>email: aqsaiftikhar2021@gmail.com | +92 320 ******* | ig: The Therapy Room</nav></footer>
       </body>
     </html>
   );
