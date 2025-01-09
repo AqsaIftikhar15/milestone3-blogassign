@@ -1,7 +1,5 @@
-import Image from "next/image";
 "use client";
 import { useState } from "react";
-import pic2 from "../../../images/pic2.webp";
 
 const CommentSection = () => {
     const [comment, setComment] = useState("");  

@@ -1,5 +1,3 @@
-import Image from "next/image";
-import pic2 from "../../images/pic2.webp"
 import Link from "next/link";
 
 
